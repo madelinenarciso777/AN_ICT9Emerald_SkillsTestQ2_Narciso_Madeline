@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>OBMC Student Enrollment Form</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+  <style>
+    body {
+      font-family: "Gill Sans";
+
+      background-image: url("your-background.jpg"); 
+      background-size: cover;
+      background-position: center;
+      background-attachment: fixed;
+    }
+
+    .form-box {
+      background-color: rgba(255, 255, 255, 0.85);
+      padding: 30px;
+      border-radius: 15px;
+    }
+
+    .section-title {
+      font-weight: 600;
+      margin-bottom: 10px;
+    }
+  </style>
+</head>
+
+<body>
+
+<nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">
+      <img src="Logo.png" alt="logo" height="50px">
+    </a>
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="mynavbar">
+      <ul class="navbar-nav me-auto">
+        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
+        <li class="nav-item"><a class="nav-link active" href="enroll.html">Enroll</a></li>
+        <li class="nav-item"><a class="nav-link" href="contact.html">Contact Us</a></li>
+      </ul>
+
+      <form class="d-flex">
+        <input class="form-control me-2" type="search" placeholder="Search">
+        <button class="btn btn-primary text-white" type="submit">Search</button>
+      </form>
+    </div>
+  </div>
+</nav>
+
+<div class="container mt-5 mb-5">
+
+  <h1 class="text-center">OBMC Student Enrollment Form</h1>
+  <p class="text-center">
+    Fill out the form below to enroll for the upcoming school year.
+  </p>
+
+  <div class="form-box shadow mt-4">
+
+    <form>
+      <p class="section-title">Student Information</p>
+
+      <div class="row">
+        <div class="col-md-6 mb-3">
+          <label class="form-label">First Name</label>
+          <input type="text" class="form-control">
+        </div>
+
+        <div class="col-md-6 mb-3">
+          <label class="form-label">Last Name</label>
+          <input type="text" class="form-control">
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-4 mb-3">
+          <label class="form-label">Birth Date</label>
+          <input type="date" class="form-control">
+        </div>
+
+        <div class="col-md-4 mb-3">
+          <label class="form-label">Gender</label>
+          <select class="form-control">
+            <option>Select</option>
+            <option>Male</option>
+            <option>Female</option>
+          </select>
+        </div>
+
+        <div class="col-md-4 mb-3">
+          <label class="form-label">Grade Level</label>
+          <select class="form-control">
+            <option>Select</option>
+            <option>Grade 7</option>
+            <option>Grade 8</option>
+            <option>Grade 9</option>
+            <option>Grade 10</option>
+            <option>Grade 11</option>
+            <option>Grade 12</option>
+          </select>
+        </div>
+      </div>
+
+      <p class="section-title mt-3">Contact Details</p>
+
+      <div class="mb-3">
+        <label class="form-label">Email Address</label>
+        <input type="email" class="form-control">
+      </div>
+
+      <div class="mb-3">
+        <label class="form-label">Contact Number</label>
+        <input type="tel" class="form-control">
+      </div>
+
+      <p class="section-title mt-3">Other Information</p>
+
+      <div class="mb-3">
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="mode">
+          <label class="form-check-label">Online</label>
+        </div>
+
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="mode">
+          <label class="form-check-label">Face to Face</label>
+        </div>
+      </div>
+
+      <div class="form-check mb-4">
+        <input class="form-check-input" type="checkbox">
+        <label class="form-check-label">
+          I confirm that the information provided is true and complete.
+        </label>
+      </div>
+
+      <div class="text-center">
+        <button type="submit" class="btn btn-primary px-5">
+          Submit Enrollment
+        </button>
+      </div>
+    </form>
+
+  </div>
+</div>
+
+</body>
+</html>
